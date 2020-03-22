@@ -25,7 +25,6 @@ public class Animal {
                 this.weight = DEAFAULT_LION_WEIGHT;
                 break;
         }
-
     }
 
     public void feed() {
