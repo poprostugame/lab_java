@@ -1,10 +1,14 @@
-package com.company;
+package com.company.creatures;
+
+import com.company.creatures.Animal;
+import com.company.devices.Car;
+import com.company.devices.Phone;
 
 public class Human {
-    String firstName;
-    String lastName;
-    Phone phone;
-    Animal pet;
+    public String firstName;
+    public String lastName;
+    protected Phone phone;
+    public Animal pet;
     private Car car;
     private Double salary;
 
@@ -39,5 +43,9 @@ public class Human {
 
     public Car getCar() {
         return car;
+    }
+    public String toString()
+    {
+        return this.firstName + " " + this.lastName;
     }
 }

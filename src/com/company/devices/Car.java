@@ -1,4 +1,4 @@
-package com.company;
+package com.company.devices;
 
 public class Car {
     final String mark;
@@ -6,7 +6,7 @@ public class Car {
     final Integer yearOfProduction;
     final Double engineCapacity;
     final String colour;
-    final Double value;
+    public Double value;
 
     public Car(String mark, String model, Integer yearOfProduction, Double engineCapacity, String colour, Double value) {
         this.mark = mark;
@@ -15,5 +15,8 @@ public class Car {
         this.engineCapacity = engineCapacity;
         this.colour = colour;
         this.value = value;
+    }
+    public String toString(){
+        return this.mark + " " + this.yearOfProduction;
     }
 }

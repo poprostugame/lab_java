@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.creatures.Animal;
+import com.company.creatures.Human;
+import com.company.devices.Car;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -52,5 +56,6 @@ public class Main {
         System.out.println(me.getCar());
         System.out.println(John.getCar());
 
+        System.out.println(me);
     }
 }
