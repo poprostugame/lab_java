@@ -38,9 +38,19 @@ public class Main {
 //        do{
   //          me.pet.takeForAWalk();
    //     }while (me.pet.imDead());
+        Car passat = new Car("Volkswagen","Passat",1984,1.9,"Red", 100000.0);
+        me.setSalary(20000.0);
+        me.setCar(passat);
 
-        me.car = new Car("Volkswagen","Passat",1984,1.9,"Red");
+        Human John = new Human();
+        John.setSalary(15000.0);
+        John.pet = new Animal("dog");
+        John.firstName = "John";
+        John.lastName = "Smith";
+        John.setCar(passat);
 
+        System.out.println(me.getCar());
+        System.out.println(John.getCar());
 
     }
 }
