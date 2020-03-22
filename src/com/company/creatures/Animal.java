@@ -14,13 +14,13 @@ public class Animal {
     public static final Double DEAFAULT_LION_WEIGHT = 123.0;
     public Animal(String species) {
         this.species = species;
-        if(species == "dog"){
+        if(species.equals("dog")){
             this.weight = DEAFAULT_DOG_WEIGHT;
         }
-        else if(species == "mouse"){
+        else if(species.equals("mouse")){
             this.weight = DEAFAULT_MOUSE_WEIGHT;
         }
-        else if(species == "lion"){
+        else if(species.equals("lion")){
             this.weight = DEAFAULT_LION_WEIGHT;
         }
 
