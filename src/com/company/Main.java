@@ -57,5 +57,18 @@ public class Main {
         System.out.println(John.getCar());
 
         System.out.println(me);
+        System.out.println(me.species);
+        me.feed();
+
+        System.out.println(me instanceof Human);
+        System.out.println(me instanceof Animal);
+
+        System.out.println(me.pet instanceof Human);
+        System.out.println(me.pet instanceof Animal);
+        System.out.println(passat instanceof Object);
+
+        System.out.println(passat);
+        System.out.println(passat);
+
     }
 }

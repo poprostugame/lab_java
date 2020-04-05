@@ -4,8 +4,8 @@ import java.io.File;
 import java.sql.SQLOutput;
 
 public class Animal {
-    final String species;
-    private Double weight;
+    final public String species;
+    protected Double weight;
     public String name;
     File pic;
 
