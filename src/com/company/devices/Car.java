@@ -1,6 +1,8 @@
 package com.company.devices;
 
-public class Car extends Device {
+import com.company.Saleable;
+
+public class Car extends Device implements Saleable {
 
     final Double engineCapacity;
     final String colour;
@@ -15,5 +17,15 @@ public class Car extends Device {
     }
     public String toString(){
         return this.mark + " " + this.yearOfProduction;
+    }
+
+    @Override
+    void turnOn() {
+
+    }
+
+    @Override
+    public void sell() {
+        System.out.println("you sell it");
     }
 }

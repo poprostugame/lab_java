@@ -6,7 +6,7 @@ import com.company.devices.Car;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Human me = new Human();
         me.firstName = "Jacek";
@@ -60,7 +60,11 @@ public class Main {
         System.out.println(me.species);
         me.feed();
 
+        me.pet.beEaten();
+//        me.beEaten();
 
-
+//        me.sell();
+        passat.sell();
+        me.pet.sell();
     }
 }
